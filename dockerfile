@@ -18,5 +18,6 @@ RUN apt-get install -y qt6-base-dev
 RUN apt-get install -y curl
 RUN apt-get install -y jq
 RUN apt-get install -y gcovr
+RUN apt-get install -y doxygen
 
 CMD ["bash"]
