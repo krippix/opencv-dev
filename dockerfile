@@ -7,17 +7,18 @@ RUN echo "deb-src http://deb.debian.org/debian bullseye-backports main contrib n
 
 RUN apt-get update -y
 
-RUN apt-get install -y cmake 
-RUN apt-get install -y ninja-build
-RUN apt-get install -y g++
-RUN apt-get install -y git
-RUN apt-get install -y libopencv-dev
-RUN apt-get install -y clang-tidy
-RUN apt-get install -y clazy
-RUN apt-get install -y qt6-base-dev
-RUN apt-get install -y curl
-RUN apt-get install -y jq
-RUN apt-get install -y gcovr
-RUN apt-get install -y doxygen
+RUN apt-get install -qq -y cmake 
+RUN apt-get install -qq -y ninja-build
+RUN apt-get install -qq -y g++
+RUN apt-get install -qq -y git
+RUN apt-get install -qq -y libopencv-dev
+RUN apt-get install -qq -y clang-tidy
+RUN apt-get install -qq -y clazy
+RUN apt-get install -qq -y qt6-base-dev
+RUN apt-get install -qq -y curl
+RUN apt-get install -qq -y jq
+RUN apt-get install -qq -y gcovr
+RUN apt-get install -qq -y doxygen
+RUN apt-get install -qq -y graphviz
 
 CMD ["bash"]
