@@ -17,8 +17,11 @@ RUN apt-get install -qq -y clazy
 RUN apt-get install -qq -y qt6-base-dev
 RUN apt-get install -qq -y curl
 RUN apt-get install -qq -y jq
-RUN apt-get install -qq -y gcovr
 RUN apt-get install -qq -y doxygen
 RUN apt-get install -qq -y graphviz
+RUN apt-get install -qq -y pip
+RUN pip install gcovr
+
+RUN echo "alias gcovr='python3 -m gcovr'" >> ~/.bashrc
 
 CMD ["bash"]
