@@ -1,4 +1,4 @@
-FROM debian:bullseye-backports
+FROM debian:bookworm-backports
 
 RUN apt-get update -y
 RUN apt-get install -y debian-ports-archive-keyring
