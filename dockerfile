@@ -19,6 +19,7 @@ RUN apt-get install -qq -y curl
 RUN apt-get install -qq -y jq
 RUN apt-get install -qq -y doxygen
 RUN apt-get install -qq -y graphviz
+RUN apt-get install -qq -y python3-full
 RUN apt-get install -qq -y pip
 RUN pip install gcovr
 
